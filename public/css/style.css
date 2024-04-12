@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cd5c5c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li {
+  background-color: #f08080;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: calc(33.33% - 20px);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: #fa8072;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #e9967a;
+}
+
+/* page admin */
+
+.p-admin-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.p-admin h2 {
+  color: #ff8a65;
+  margin-top: 20px;
+}
+
+.p-admin ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.p-admin li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.p-admin li p {
+  margin: 0;
+  color: grey;
+}
+
+.p-admin li a {
+  display: inline-block;
+  margin-left: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.p-admin li a:hover {
+  text-decoration: underline;
+}
+
+/* page formulaire d'ajout  */
+
+.p-formadd body {
+  font-family: Arial, sans-serif;
+  background-color: #cd5c5c;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.p-formadd form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+
+.p-formadd h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.p-formadd label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.p-formadd input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.p-formadd button[type="submit"] {
+  background-color: #cd5c5c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.p-formadd button[type="submit"]:hover {
+  background-color: #b53d3d;
+}
+
+/* page formulaire de modification   */
+
+.p-formedit form {
+  background-color: #ffb74d; /* Couleur du formulaire */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+
+.p-formedit h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fdf2e9; /* Couleur du texte */
+}
+
+.p-formedit label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  width: auto;
+}
+
+.p-formedit input[type="text"],
+textarea {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 94px;
+}
+
+.p-formedit button[type="submit"] {
+  background-color: #cd5c5c; /* Couleur du bouton */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.p-formedit button[type="submit"]:hover {
+  background-color: #b53d3d; /* Couleur du bouton au survol */
+}

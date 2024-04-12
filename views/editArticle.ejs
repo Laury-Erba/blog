@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier l'article</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="p-formedit">
+        <h1>Modifier l'article</h1>
+        <form action="/admin/<%= article.id %>/update" method="POST" enctype="multipart/form-data">
+            <label for="title">Titre :</label>
+            <input type="text" id="title" name="title" value="<%= article.title %>" required><br>
+            <label for="content">Contenu :</label>
+            <textarea id="content" name="content" required><%= article.content || '' %></textarea><br><br>
+            <label for="picture">Image :</label>
+            <input type="text" id="picture" name="picture" value="<%= article.picture %>" required><br>
+            <label for="alt">Texte alternatif de l'image :</label>
+            <input type="text" id="alt" name="alt" value="<%= article.alt %>" required><br>
+            <label for="category">Catégorie :</label>
+            <input type="text" id="category" name="category" value="<%= article.category %>" required><br>
+            <button type="submit">Modifier</button>
+        </form>
+    </div>
+</body>
+</html>

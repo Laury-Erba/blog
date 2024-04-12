@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Bienvenue sur notre Blog</h1>
+    <a href="/admin" style="text-decoration: none;">
+        <i class="fa-solid fa-user"></i>
+        Connexion à l'interface d'administration
+    </a>
+    <ul>
+        <% articles.forEach(article => { %>
+            <li>
+                <h2><%= article.title %></h2>
+                <p><%= article.content %></p>
+                <img src="/css/images/<%= article.picture %>" alt="<%= article.alt %>">
+                <p>Catégorie: <%= article.category %></p>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>

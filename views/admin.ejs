@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'administration</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="p-admin">
+        <h1>Page d'administration</h1>
+        <a href="/admin/addArticle">Ajouter un nouvel article</a>
+        <a href="/">Retour à la page d'accueil</a> 
+        <h2>Liste des articles</h2>
+        <ul>
+            <% articles.forEach(article => { %>
+                <li>
+                    <p><strong><%= article.title %></strong></p>
+                    <p><%= article.content %></p>
+                    <a href="/admin/<%= article.id %>/edit">Modifier</a>
+                    <a href="/admin/delete/<%= article.id %>">Supprimer</a>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+    
+</body>
+</html>
